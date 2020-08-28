@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bouncing Ball !</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.wrapper{
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		background: black;
+		color: #fff;
+		text-align: center;
+	}
+
+	#ball01, #ball02 , #ball03, #ball04, #ball05, #ball06, #ball07, #ball08, #ball09{
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		border-radius: 50%;
+		background: orange;
+		animation: bounce 1s infinite alternate;
+	}
+	#ball01{
+		left: 10%;
+	}
+	#ball02{
+		left: 20%;	
+		animation-delay: 0.1s;
+	}
+	#ball03{
+		left: 30%;	
+		animation-delay: 0.2s;
+	}
+	#ball04{
+		left: 40%;	
+		animation-delay: 0.3s;
+	}
+	#ball05{
+		left: 50%;	
+		animation-delay: 0.4s;
+	}
+	#ball06{
+		left: 60%;	
+		animation-delay: 0.5s;
+	}
+	#ball07{
+		left: 70%;	
+		animation-delay: 0.6s;
+	}
+	#ball08{
+		left: 80%;	
+		animation-delay: 0.7s;
+	}
+	#ball09{
+		left: 90%;	
+		animation-delay: 0.8s;
+	}
+
+
+
+	@keyframes bounce{
+		from {
+			margin-top: 0;
+			background: orangered;
+		}
+		to {
+			/* background: green; */
+			margin-top: -200px ;
+		}
+	}
+	
+</style>
+<body>
+	<div class="wrapper">
+		<div id="ball01"></div>
+		<div id="ball02"></div>
+		<div id="ball03"></div>
+		<div id="ball04"></div>
+		<div id="ball05"></div>
+		<div id="ball06"></div>
+		<div id="ball07"></div>
+		<div id="ball08"></div>
+		<div id="ball09"></div>
+	</div>
+</body>
+</html>
